@@ -1,14 +1,30 @@
 5
 6
-array1= [10, 20, 30, 40, 50]
-array2 = [40, 10, 35, 15, 40, 20]
+array1_test= [10, 20, 30, 40, 50]
+array2_test = [40, 10, 35, 15, 40, 20]
 
-array1_length = len(array1)
+
+def binary_search(key, array) 
+
+array1_len = key
+array2_len = array
+
+array1_string = " "
+array2_string = " "
+
+array2 = [int(i) for i in array2_string.split()]
+
+
+array1 = [int(j) for j in array1_string.split()]
 
 x = len(array2) #get length of array2 (6) to see where to divide in 2
 print x
-array2_a = array2[0:3] # set variable to first half of array
-array2_b = array2[3:7] # set variable to second half of array
+
+y = x/2
+print y
+
+array2_a = array2[0:key/2] # set variable to first half of array
+array2_b = array2[key/2:array+1] # set variable to second half of array
 
 
 indexed_array2 = [] #set empty list into which indexes values for array2 gathered
@@ -28,3 +44,5 @@ for n in array2_b: #searches if n in array1, procedure same as array2_a
 
 
 print indexed_array2 #prints list of matched indexes between array1 and array2
+
+binary_search(key, array)
