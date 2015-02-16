@@ -1,0 +1,30 @@
+5
+6
+array1= [10, 20, 30, 40, 50]
+array2 = [40, 10, 35, 15, 40, 20]
+
+array1_length = len(array1)
+
+x = len(array2) #get length of array2 (6) to see where to divide in 2
+print x
+array2_a = array2[0:3] # set variable to first half of array
+array2_b = array2[3:7] # set variable to second half of array
+
+
+indexed_array2 = [] #set empty list into which indexes values for array2 gathered
+
+for n in array2_a: #start loop through array
+    if n in array1: #searches if n in array2_a is in array1
+        indexed_array2.append(array1.index(n) +1) #appends n's matching index value from array1, +1 is offset b/c python indexes start at 0
+        
+    elif n not in array1: #if n is not in array1 mark array2 value as -1
+        indexed_array2.append(-1)
+        
+for n in array2_b: #searches if n in array1, procedure same as array2_a
+    if n in array1:
+        indexed_array2.append(array1.index(n) +1)
+    elif n not in array1:
+        indexed_array2.append(-1)
+
+
+print indexed_array2 #prints list of matched indexes between array1 and array2
