@@ -1,7 +1,7 @@
 
 def binary_search(key, array):
 
-	
+	array1_len = key
 	array2_len = array
 	
 	#array strings comes from rosalind dataset download
@@ -18,7 +18,7 @@ def binary_search(key, array):
 	array2_a = array2[0:(array2_len/2) +1] # set variable to first half of array
 	array2_b = array2[array2_len/2:array2_len +1] # set variable to second half of array
 	
-	indexed_array2 = [] #set empty list into which indexes values for array2 gathered
+	indexed_array2 = [] #set empty list into which indexes values for array2 are gathered
 
 	#start loop through unsorted array2
  	for n in array2_a: 
