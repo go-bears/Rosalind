@@ -17,12 +17,12 @@ def binary_search(key, array):
 	try:
 		matched_index = [] #empty list for index of array 2 
 
-		for n in array2:
-			if n in array1:
-				matched_index.append(bisect.bisect_left(array1, n))
+		for n in array2:  #loops through array 2
+			if n in array1: #matches if n in array 2 is in array1
+				matched_index.append(bisect.bisect_left(array1, n)) #using bisect model to match n with array1 index, 
 
 			if n not in array1:
-				matched_index.append(-1)
+				matched_index.append(-1) #append -1 if n is not in array 1
 
 	except:
 		print "sorry, try again."
