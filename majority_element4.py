@@ -49,7 +49,6 @@ candidate = []
 for single in sorted_arrays:
 	midpoint_entry = single[midpoint] 
 	
-
 	#loop through midpoint entry integers to count instances of midpoint entry
 	c = 0
 	for n in single:
